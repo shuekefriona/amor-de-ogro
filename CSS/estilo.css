@@ -1,0 +1,384 @@
+
+*{
+margin: 0; /* Margem*/
+padding: 0; /* Espaçamento */
+}
+
+body{ /* Corpo do Site */
+background-color: #ffffff; /* Cor de Fundo */
+}
+
+
+
+.menu { /* Tópicos do Menu */
+font-family:'Times New Roman', Times, serif; /* Fonte do Menu */
+font-size: 20px; /* Tamanho da Fonte do Menu */
+width: 100%; /* Disposição do Menu na Tela */
+}
+
+.menu ul{ /* Lista do Menu */
+list-style: none; /* Remoção do Marcador */
+display: flex; /* Alinhando os Itens Lado a Lado */
+text-align: center; /* Alinhamento Central do Texto */
+}
+
+.menu ul li{ /* Itens da Lista do Menu */
+padding: 18px; /* Espaçamento */
+flex-grow: 1; /* Necessidade de Crescer, Caso Necessário */
+transition: background-color .2s linear; /* Transição de Efeito */
+border: solid 1px transparent; /* Borda*/
+}
+
+.menu ul li a{ /* Ligação dos Links */
+text-decoration: none; /* Sem Decoração*/
+color: #000000; /* Cor das Palavras Linkadas */
+}
+
+.menu a:hover{ /* Mudança ao Passar o Mouse Sobre a Palavra Linkada */
+color: #000000; /* Coloração Após Passar o Mouse */
+font-size: 26px; /* Tamanho da Fonte */
+}
+
+#item1{
+    background-color: #effce9; 
+    }
+    #item2{
+    background-color: #f7f7f7;
+    }
+    #item3{
+    background-color: #f3e851;  
+    }
+    #item4{
+        background-color: #f7f7f7;
+    }
+    #item5{
+        background-color: #effce9; 
+    }
+     /* Itens e Suas Colorações  */
+
+    
+footer{ /* Rodapé */
+    background: #eeebed;  /* Cor de Fundo */
+    height: auto; /* Adaptação a Altura */
+    width: 100%; /* Largura */
+    font-family:"Open Sans"; /* Fonte */
+    padding-top: 30px; /* Espaçamento do Topo */
+    border: 1px solid rgb(206, 206, 206); /* Bordas */
+}
+
+#FooterTexto { /* Texto do Rodapé */
+    color: #5f5f5f;/* Coloração */
+    font-size: 17px; /* Tamanho da Fonte */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo da Fonte */
+}
+
+
+.footer-content{ /* Adicionar Conteúdo */
+    display: flex; /* Disposição */
+    align-items: center; /* Alinhamento dos Itens*/
+    justify-content: center; /* Alinhamento Dentro do Container */
+    flex-direction: column; /* Colocação dos Itens no Container */
+    text-align: center; /* Alinhamento de Texto*/
+
+}
+
+.footer-content h3{
+    padding-left: 10px; /* Espaçamento */
+    padding-right: 10px; /* Espaçamento */
+}
+
+
+
+.footer-bottom{ /* Rodapé Inferior */
+    background:  #e4e4e2; /* Cor de Fundo */
+    width: 100vw; /* Largura Visível do Navegador*/
+    padding: 10px ; /* Espaçamento */
+    text-align: center; /* Alinhamento do Texto */
+    border: 1px solid rgb(182, 182, 182); /* Borda */
+}
+
+.footer-bottom p{ /* Texto do Rodapé Inferior */
+    font-size: 14px; /* Tamanho da Fonte */
+    word-spacing: 2px; /* Espaçamento de Caracteres */
+    color:#af0663;
+    
+}
+
+.footer-bottom span{ /* Container Genérico */
+    text-transform: uppercase; /* Letras Maiúsculas */
+    opacity: .4; /* Opacidade */
+    font-weight: 200; /* Tamanho da Fonte */
+}
+
+    
+        
+
+        .galeria{ /*Página de Fotos*/
+            display: flex; /*Para Ajustar o Container*/
+            flex-wrap:wrap-reverse; /* Criação de Outra Coluna Quando Excede o Limite*/
+            width: 80%; /* Tamanho das Imagens */
+            justify-content: space-around; /* Alinhamento no Espaço ao Redor*/
+            padding:10px 0; /* Espaçamento*/
+            margin: 0 auto; /* Margem */ 
+            }
+            
+            .box{ /* Divisórias das Imagens Dispostas*/
+            width: 30%; /* Tamanho das Divisórias */
+            padding-top: 35px; /* Espaçamento do Topo */
+            margin: 5px; /* Margem */
+             }
+            
+            
+            .box img{ /* Imagens Dispotas na Divisória*/
+            width: 100%; /* Tamanho das Fotos*/
+            height: 100%; /* Altura*/
+            border: 1px solid #949394; ; /* Especificações da Borda*/
+            }
+
+            .box img:hover{ /* Transformação ao Passar com o Mouse Sobre a Divisória */
+                -webkit-transform: scale(1.3); /* Tamanho do Aumento */
+            }
+            #imgGaleria{ /* Tamanho da Ocupação Dentro do Block */
+                max-width: 100%; /* Tamanho */
+                display: block; /*Comportamento de Bloco */
+               
+                }
+            
+                #imgGaleria:hover{ /*Transformação ao Passar o Mouse Sobre as Fotos  */
+                    -webkit-transform: scale(1.6); /* Tamanho do Aumento */   
+                }
+                
+
+    #home h1{ /* Título da Tela Inicial */
+        color: #333232; /* Coloração do Título */
+        text-align: center; /* Alinhamento do Título */
+    }
+    
+
+     #Inicio a{ /*Palavra Linkada */
+         text-decoration: none; /* Sem Mudanças */
+         color: #696868; /* Coloração */
+     } 
+    #Inicio a:hover{ /* Palavra Linkada Após Passar o Mouse */
+        font-size: 22px; /*Tamanho */
+        color: #38883c; /* Coloração */
+    }
+    hr{ /* Linha Divisória */
+        width:100%;  /* Tamanho */
+      }
+
+      #Inicio p{ /* Texto da Página Inicial */
+        color:#6b6969;  /* Coloração */
+      }
+
+    @media (max-width: 880px){ /* Comportamento do Menu em Aparelhos Menores */ 
+        .menu ul{
+        display: block;
+        }
+
+        img#header-infos-img {
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        
+        }
+
+        .banner { /* Divisória do Banner do Site */
+            background: url("../IMG/banner.png"); /* Pasta de Localização */
+            height: 450px; /* Altura */
+            position: relative; /* Posicionado em Referência */
+         } 
+
+         img#banner { /* Imagem Ocupada no Banner */
+            width: 100%; /* Tamanho */
+            
+        }
+
+        #Inicio{ /* Texto Inicial */
+            padding: 5px; /* Espaçamento */
+            display: flex; /* Para Ajustar o Container */
+            flex-direction: column; /* Direcionado em Colunas */
+            align-items: center; /* Alinhamento de Todos os Itens */
+            position: relative; /* Posicionado em Referência */
+            margin: 0 auto; /* Margem Automatica em Todos Lados */
+            }
+            
+            #Inicio div{ /* Divisória do Início*/
+            display: flex; /* Para Ajustar o Container */
+            flex-direction: column; /* Direcionado em Colunas */
+            align-items: center; /* Alinhamento de Todos os Itens */
+            text-align: center; /* Alinhamento de Texto */
+            margin-top: 30px; /* Margem Superior */
+            }
+            
+            #Inicio p{ /* Texto do Início */
+            line-height: 1.5; /* Altura de Ocupação do Texto */
+            margin: 2vh; /* Margem */
+            font-size: 1.2em; /* Tamanho da Fonte */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo da Fonte */
+            }
+            
+            #Inicio img{ /* Imagens das Letras */
+            margin: 10px 0; /* Margem */
+            }
+            
+            #Inicio h2{ /*Texto Sob a Imagem */
+            font-size: 2em; /* Tamanho da Fonte */
+            color:#e109f5; /* Coloração */
+            }
+
+            #Paginas{ /* Seção de Links de Páginas */
+                padding: 20px; /* Espaçamento */
+                display: flex; /* Para Ajustar o Container */
+                flex-direction: column; /* Direcionado em Colunas */
+                align-items: center; /* Alinhamento de Todos os Itens */
+                position: relative; /* Posicionado em Referência */
+                margin: 0 auto; /* Margem Automatica em Todos Lados */
+                }
+                
+                #Paginas div{ /* Seção das Divisórias de Links de Páginas */
+                display: flex; /* Para Ajustar o Container */
+                flex-direction: column; /* Direcionado em Colunas */
+                align-items: center; /* Alinhamento de Todos os Itens  */
+                text-align: center; /* Alinhamento do Texto */
+                margin-top: 30px; /* Margem Superior */
+                }
+                
+                #Paginas p{ /* Texto da Seção Páginas */
+                line-height: 1.5; /* Altura de Ocupação do Texto */
+                margin: 2vh; /* Margem */
+                font-size: 1.2em; /* Tamanho da Fonte */
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo da Fonte */
+                }
+                
+                #Paginas img{ /* Imagens da Seção Página */
+                margin: 10px 0; /* Margem */
+                }
+                
+                #Paginas h2{ /* Texto da Seção Páginas */
+                font-size: 2em; /* Tamanho da Fonte */
+                }
+                #Paginas h3{ /* Texto da Seção Páginas */
+                    color: #2c2a2a; ; /* Coloração */
+                    }
+
+                #Paginas a{ /* Palavra Linkada da Seção Páginas */
+                    color: #ff0015; ; /* Coloração */
+                    text-decoration: none; /* Sem Mudanças */
+                }
+
+                #Paginas a:hover{ /* Palavra Linkada Após Passar o Mouse */
+                    color: #df1e68; /* Coloração */
+                }
+
+            #fotos:hover{ /* Imagens ao Passar o Mouse */
+                
+                box-shadow: 0 48px 12px #ffffff; /* Coloração */
+                
+            }
+            #Inicio:hover h3{ /* Textos das Imagens Após Passar o Mouse */
+                color: #000000;
+            }
+
+
+
+            #Inicio h3{  /* Textos Antes das Imagens Passar o Mouse */
+                color:#ffffff;
+                
+            }
+            p { /* Textos Gerais da Página */
+                font-family: "Arial"; /* Estilo da Fonte */
+                font-size: 34px; /* Tamanho da Fonte */
+                color: #424242; /* Coloração */
+            }
+
+
+            h1{  /* Textos Gerais da Página */
+                text-align: center; /* ALinhamento */
+                color: #73df6f; /* Coloração */
+            }
+           
+
+            #topicos { /* Tópicos das Páginas */
+                width:100%; /* Tamanho */
+                height: 80px; /* Altura*/
+                margin-top: 20px; /* Margem Superior */
+                background-color:  #eeeaea;  /* Coloração */
+                border: 1px solid  #eeeeee; /* Coloração da Borda */
+            }
+
+            #topicos h1{ /* Títulos dos Tópicos */
+                color: rgb(70, 66, 69); /* Coloração */
+                text-align: center; /* Alinhamento */
+                padding-left: 20px; /* Espaçamento à Esquerda */
+                padding-top: 20px; /* Espaçamento do Topo */
+            }
+
+            
+            p{ /* Textos Gerais da Página */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo da Fonte */
+            font-size: 24px; /* Tamanho da Fonte */
+            padding: 20px 0px 0px 20px; /* Espaçamentos */
+            
+            }
+
+            @media screen and (min-width: 768px){ /* Comportamento da Página em Aparelhos Menores */ 
+
+                #Inicio{
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                max-width: 1000px;
+                margin: 0 auto;
+                }
+                
+                #Inicio h2{
+                text-align: center;
+                width: 100%;
+                }
+                
+                #Inicio div{
+                flex-grow: 1;
+                flex-basis: 150px;
+                padding: 0 10px;
+                }
+
+                #Paginas{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    }
+                    
+                    #Paginas h2{
+                    text-align: center;
+                    width: 100%;
+                    }
+                    
+                    #Paginas div{
+                    flex-grow: 1;
+                    flex-basis: 150px;
+                    padding: 0 10px;
+                    }
+                
+                
+                }
+
+                #PropostaFinal { /* Imagem da Proposta */
+                    text-align: center; /* Posição da Imagem */
+                    padding-top: 20px; /* Espaçamento Superior*/
+                    padding-bottom: 40px; /* Espaçamento Inferior */
+               }
+
+               #PropostaFinal a{ /* Palavra Linkada Antes de Passar o Mouse */
+                color:#ee329a; /* Coloração */
+               }
+               #PropostaFinal a:hover{ /* Palavra Linkada Após Passar o Mouse */
+                color:rosybrown; /* Coloração */
+               }
+
+
+                
+          
